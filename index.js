@@ -1,3 +1,10 @@
+const DATA  = {
+  apple: 5,
+  orange: 10,
+  banana: 15,
+  pear: 10
+}
+
 const express = require('express')
 const app = express()
 
@@ -10,7 +17,7 @@ app.use(bodyParser.json())
 
 
 app.get("/", (req, res) => {
-  res.json({a:1, b:2})
+  res.json(DATA)
 })
 
 // local host:3003
