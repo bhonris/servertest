@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
   res.json(DATA)
 })
 
-// received: selectedFruit
+// 1. received: selectedFruit
 // send: JSON of structure {name: string, price: int}`
 // Example:
 //    /fruit/banana => {name: 'banana', price: '15'}
@@ -32,7 +32,7 @@ app.get("/fruit/:selectedFruit", (req, res) => {
   res.send(`INCOMPLETE`)
 })
 
-// received: maxPrice
+// 2. received: maxPrice
 // filters only fruits where price <= maxPrice
 // send: JSON array of structure [...{name: string, price: int}]
 // Example:
