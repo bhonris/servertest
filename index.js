@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 app.get("/fruit/:selectedFruit", (req, res) => {
   // FILL IN THIS FUNCTION HERE
   const fruit = req.params.selectedFruit
-  res.send(`INCOMPLETE`)
+  res.json(`INCOMPLETE`)
 })
 
 // 2. received: maxPrice
@@ -41,7 +41,7 @@ app.get("/fruit/:selectedFruit", (req, res) => {
 app.get("/price/:maxPrice", (req, res) => {
   // FILL IN THIS FUNCTION HERE
   const maxPrice = req.params.maxPrice
-  res.send(`INCOMPLETE`)
+  res.json(`INCOMPLETE`)
 })
 
 // local host:3003
